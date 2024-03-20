@@ -1,0 +1,135 @@
+/*Responsive*/
+/*Pantalla Grande*/
+@media screen and (max-width: 1400px){
+
+    main .contenedor{
+        width: 50vw;
+    }
+    main .resultado{
+        width: 40vw;
+    }
+    
+}
+/*Pantalla Mediana*/
+@media screen and (max-width: 1023px){
+    .main { 
+        flex-direction: column;
+        max-height: inherit;
+    }
+    .main .logo,
+    .main .contenedor,
+    .main .salida{
+        width: 100%;
+    }
+    .main .logo{
+        justify-content: flex-start;
+    }
+    main .logo img{
+        padding-left: 2em;
+    }
+    main .contenedor {
+        padding-top: 5vh;
+    }
+    main .contenedor .entrada {
+        width: 100%;
+        padding: 2em;
+    }
+    main .contenedor .entrada textarea{
+        height: 50vh;
+        width: 90%;
+    }
+    main .salida{
+        margin:0;
+    }
+    main .salida .resultado {
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2em;
+        height: auto;
+        overflow: hidden;
+    }
+    /*
+    main .resultado .resultado_salida .result_decrypt{
+        overflow-y: auto;
+        max-height: 25vh;
+        margin: 2.5em;
+    }
+    */
+    main .resultado .sin_salida img{
+        display: none;
+    }
+    main .botones{
+        display: flex;
+        flex-direction: column;
+        gap: 1em; 
+        
+    }
+    
+
+}
+/*Pantalla Chica*/
+@media screen and (max-width: 767px){
+    .main { 
+        
+        flex-direction: column;
+        max-height: inherit;
+    }
+    .main .logo,
+    .main .contenedor,
+    .main .resultado{
+        width: 100%;
+    }
+    .main .logo{
+        justify-content: flex-start;
+    }
+    main .logo {
+        width: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 1em;
+    
+    }
+    .main .logo img{
+        padding-left: 2em;
+    }
+    .main .contenedor {
+        padding-top: 2vh;
+    }
+    .main .contenedor .entrada {
+        width: 100%;
+        padding: 1em 2em 1em;
+    }
+    .main .contenedor .entrada textarea{
+        height: 20vh;
+    }
+    .main .resultado .resultado{
+        width: 100%;
+        margin: 2em;
+        height: auto;
+        overflow: hidden;
+    }
+    /*
+    .main .resultado .resultado .resultado_salida .result_decrypt{
+        overflow-y: auto;
+        max-height: 30vh;
+        margin: 2.5em;
+    }
+    */
+    .main .resultado .resultado .resultado_salida{
+	font-weight: 400;
+	padding: 1em;
+	height: 70%;
+    }
+    main .resultado .sin_salida img{
+        display: none;
+    }
+    main .botones{
+        display: flex;
+        flex-direction: column;
+        gap: 1em; 
+        
+    }    
+}
